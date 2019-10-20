@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MemberOfCirclePage</class>
+ <widget class="QMainWindow" name="MemberOfCirclePage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>664</width>
+    <height>416</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QTabWidget" name="MyCircleTab">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;나눔바른고딕&quot;;</string>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="tab_1">
+         <attribute name="title">
+          <string>공지사항</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>조회할 글의 목록을 선택하여 더블클릭하세요.</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTreeWidget" name="noticeListWidget">
+              <column>
+               <property name="text">
+                <string>No.</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>제목</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>작성자</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>작성일</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QPushButton" name="noticeRefreshButton">
+                <property name="minimumSize">
+                 <size>
+                  <width>81</width>
+                  <height>31</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>새로고침</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Minimum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>28</width>
+                  <height>28</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QComboBox" name="noticeSearchComboBox">
+                <property name="minimumSize">
+                 <size>
+                  <width>76</width>
+                  <height>31</height>
+                 </size>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>제목</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>작성자</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>작성일</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="noticeSearchLineEdit">
+                <property name="minimumSize">
+                 <size>
+                  <width>191</width>
+                  <height>31</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">font: 12pt &quot;나눔바른고딕&quot;;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="noticeSearchButton">
+                <property name="minimumSize">
+                 <size>
+                  <width>75</width>
+                  <height>31</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>검  색</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>118</width>
+                  <height>28</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>이번 달 일정</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QCalendarWidget" name="circleCalendarWidget"/>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                 <widget class="QLabel" name="dateLabel">
+                  <property name="minimumSize">
+                   <size>
+                    <width>30</width>
+                    <height>21</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>30</width>
+                    <height>21</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>날짜 :</string>
+                  </property>
+                  <property name="buddy">
+                   <cstring>dateEdit</cstring>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QDateEdit" name="dateEdit">
+                  <property name="minimumSize">
+                   <size>
+                    <width>154</width>
+                    <height>21</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>154</width>
+                    <height>21</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_3">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>100</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>2</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <item>
+                 <widget class="QLabel" name="scheduleContentsLabel">
+                  <property name="text">
+                   <string>일정내용</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_4">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>248</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTreeWidget" name="scheduleListWidget">
+                <property name="styleSheet">
+                 <string notr="true">font: 9pt &quot;나눔바른고딕&quot;;</string>
+                </property>
+                <column>
+                 <property name="text">
+                  <string>시간</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>일정내용</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <item>
+                 <widget class="QPushButton" name="scheduleRefreshButton">
+                  <property name="minimumSize">
+                   <size>
+                    <width>81</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>새로고침</string>
+                  </property>
+                  <property name="default">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_5">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>218</width>
+                    <height>28</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>동아리 관리자에게 궁금한 한 마디</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>조회할 글의 목록을 선택하여 더블클릭하세요.</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTreeWidget" name="boardListWidget">
+              <column>
+               <property name="text">
+                <string>No.</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>제목</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>작성일</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>답변일</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <widget class="QPushButton" name="boardRefreshButton">
+                <property name="minimumSize">
+                 <size>
+                  <width>81</width>
+                  <height>31</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>새로고침</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Minimum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>28</width>
+                  <height>28</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QComboBox" name="boardSearchComboBox">
+                <property name="minimumSize">
+                 <size>
+                  <width>76</width>
+                  <height>31</height>
+                 </size>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>제목</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>작성일</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="boardSearchLineEdit">
+                <property name="minimumSize">
+                 <size>
+                  <width>191</width>
+                  <height>31</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">font: 12pt &quot;나눔바른고딕&quot;;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="boardSearchButton">
+                <property name="minimumSize">
+                 <size>
+                  <width>75</width>
+                  <height>31</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>검  색</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_7">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>28</width>
+                  <height>28</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="boardWriteButton">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>31</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>50</width>
+                  <height>31</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>글쓰기</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="deleteBoardButton">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>31</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>50</width>
+                  <height>31</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>글 삭제</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QPushButton" name="deleteMyCircleButton">
+          <property name="minimumSize">
+           <size>
+            <width>111</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 11pt &quot;나눔바른고딕&quot;;</string>
+          </property>
+          <property name="text">
+           <string>동아리 탈퇴</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>408</width>
+            <height>38</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="exitMyCircleButton">
+          <property name="minimumSize">
+           <size>
+            <width>111</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 11pt &quot;나눔바른고딕&quot;;</string>
+          </property>
+          <property name="text">
+           <string>나가기</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

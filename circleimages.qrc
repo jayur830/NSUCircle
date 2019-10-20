@@ -1,0 +1,36 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>images/C.C.C.jpg</file>
+        <file>images/N.S.TV.jpg</file>
+        <file>images/강산길.jpg</file>
+        <file>images/굿네이버스.jpg</file>
+        <file>images/그루브.jpg</file>
+        <file>images/낮은울타리.jpg</file>
+        <file>images/노스텔지어.jpg</file>
+        <file>images/녹색지대.jpg</file>
+        <file>images/닉샷.jpg</file>
+        <file>images/바이블사랑.jpg</file>
+        <file>images/바이오스.jpg</file>
+        <file>images/샤우트.jpg</file>
+        <file>images/소리터.jpg</file>
+        <file>images/시네마떼끄.jpg</file>
+        <file>images/싸커클럽.jpg</file>
+        <file>images/아름다운사람들.jpg</file>
+        <file>images/아메리타트.jpg</file>
+        <file>images/아우트런스.jpg</file>
+        <file>images/애니지크.jpg</file>
+        <file>images/애드밴처.jpg</file>
+        <file>images/예수전도단.jpg</file>
+        <file>images/이그니션.jpg</file>
+        <file>images/이미지.jpg</file>
+        <file>images/저스트댄스.jpg</file>
+        <file>images/제너시스.jpg</file>
+        <file>images/주리넷.jpg</file>
+        <file>images/카르페디엠.jpg</file>
+        <file>images/클래시.jpg</file>
+        <file>images/플레이닝.jpg</file>
+        <file>images/loading.jpg</file>
+        <file>images/splash.png</file>
+        <file>images/nsucircle.jpg</file>
+    </qresource>
+</RCC>

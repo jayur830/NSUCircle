@@ -1,0 +1,6 @@
+#include "etcfunctionclass.h"
+
+void EtcFunctionClass::showListWidgetOfCircle(int n = NULL, QString circleName = "", QString comboBoxText = "", QString searchLineEdit = "", QTreeWidget* item = nullptr, QVector<T>* t = nullptr)
+{
+    
+}
